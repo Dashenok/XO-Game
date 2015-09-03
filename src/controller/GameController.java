@@ -142,6 +142,7 @@ public class GameController {
         // BEGIN
         int rowNumber;
         int columnNumber;
+
         Player playerX;
         Player playerO;
         if (players[0].getFigure().toString() == "X"){
