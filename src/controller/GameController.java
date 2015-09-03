@@ -81,7 +81,6 @@ public class GameController {
                     } else if (figure.getFigure().equals("O")) {
                         ONumber = ONumber + 1;
                     }
-                    ;
                 }
             }
         }
@@ -141,8 +140,8 @@ public class GameController {
 
 
         // BEGIN
-        int rowNumber = 0;
-        int columnNumber = 0;
+        int rowNumber;
+        int columnNumber;
         Player playerX;
         Player playerO;
         if (players[0].getFigure().toString() == "X"){
@@ -240,7 +239,6 @@ public class GameController {
             move(x, y, board, Figure.O);
         }catch (InvalideCoordinateException | FieldNotEmptyException e){
             e.printStackTrace();
-
         }
 
 
